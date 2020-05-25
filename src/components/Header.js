@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <div className="header">
         <h1>Employee Directory</h1>
-        <p>Click name column to sort by ascending/descending order or use the search box to narrow your results.</p>
+        <p>Click 'Name' column to sort by ascending and descending order, or use the search box to narrow your results.</p>
       </div>
     )
   }
