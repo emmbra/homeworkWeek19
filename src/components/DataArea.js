@@ -4,6 +4,9 @@ import Nav from "./Nav";
 import API from "../utils/API";
 import "../styles/DataArea.css";
 
+// component that renders the data areas including columns: image, name, phone, email, DOB
+// also allows for ascending/descending sorting of these columns
+
 export default class DataArea extends Component {
   state = {
     users: [{}],
@@ -77,6 +80,7 @@ export default class DataArea extends Component {
     this.setState({ filteredUsers: filteredList });
   }
 
+  // takes info from api getUsers request and sets the current state to those users
   componentDidMount() {
     API.getUsers().then(results => {
       this.setState({
@@ -85,6 +89,8 @@ export default class DataArea extends Component {
       });
     });
   }
+
+  // render the data table and pass down props
 
   render() {
     return (

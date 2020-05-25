@@ -2,6 +2,8 @@ import React from "react";
 import DataBody from "./DataBody";
 import "../styles/DataTable.css";
 
+// component that renders the table of employees
+
 function DataTable({ headings, users, handleSort }) {
   return (
     <div className="datatable mt-5">
