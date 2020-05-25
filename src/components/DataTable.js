@@ -2,7 +2,7 @@ import React from "react";
 import DataBody from "./DataBody";
 import "../styles/DataTable.css";
 
-// component that renders the table of employees
+// component that maps out the employess to the DataTable
 
 function DataTable({ headings, users, handleSort }) {
   return (

@@ -22,6 +22,8 @@ export default class DataArea extends Component {
     { name: "DOB", width: "10%" }
   ]
 
+  // updates order state to either ascending or descending order
+  // depending on current state of either ascend or descend
   handleSort = heading => {
     if (this.state.order === "descend") {
       this.setState({
@@ -33,6 +35,7 @@ export default class DataArea extends Component {
       })
     }
 
+    // compares names in name column and sorts users by name
     const compareFnc = (a, b) => {
       if (this.state.order === "ascend") {
         // account for missing values
@@ -90,8 +93,7 @@ export default class DataArea extends Component {
     });
   }
 
-  // render the data table and pass down props
-
+  // renders and passes down props to DataTable
   render() {
     return (
       <>
