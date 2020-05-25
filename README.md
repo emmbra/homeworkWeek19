@@ -1,4 +1,5 @@
 # Employee Directory
+[Employee Directory](https://eb-user-directory.herokuapp.com/) - deployed on Heroku
 
 ## Description
 Created a searchable employee directory app that allows user to search for a specific employee or sort the table by the 'Name' column in ascending or descending order.
